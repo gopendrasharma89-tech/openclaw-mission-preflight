@@ -1,0 +1,40 @@
+{
+  "name": "openclaw-mission-preflight",
+  "version": "0.1.0",
+  "description": "Unique OpenClaw plugin that turns vague requests into execution-ready briefs with ambiguity scanning, risk stress tests, and high-value clarification prompts.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "agent-tools",
+    "planning",
+    "preflight",
+    "risk-analysis",
+    "clarification"
+  ],
+  "dependencies": {
+    "@sinclair/typebox": "0.34.49"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.4.20"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    }
+  },
+  "openclaw": {
+    "runtimeExtensions": [
+      "./dist/index.js"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.4.20",
+      "minGatewayVersion": "2026.4.20"
+    },
+    "build": {
+      "openclawVersion": "2026.4.20",
+      "pluginSdkVersion": "2026.4.20"
+    }
+  }
+}

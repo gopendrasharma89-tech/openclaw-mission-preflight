@@ -1,0 +1,15 @@
+{
+  "id": "mission-preflight",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "contracts": {
+    "tools": [
+      "mission_preflight_scan",
+      "mission_preflight_stress_test",
+      "mission_preflight_brief"
+    ]
+  }
+}
